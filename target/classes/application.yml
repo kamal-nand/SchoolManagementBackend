@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/schoolmanagement
+    username: postgres
+    password: qwerty123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+app:
+  security:
+    jwt-secret: "change-this-secret-to-a-long-random-string"
+    jwt-expiration-ms: 86400000 # 1 day
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.security: INFO
