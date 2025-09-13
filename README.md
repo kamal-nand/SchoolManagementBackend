@@ -1,11 +1,11 @@
 # School Management API (Spring Boot + PostgreSQL)
 
-**Resume-ready backend**: Spring Boot 3, PostgreSQL, Spring Data JPA, Validation, Spring Security (JWT), Swagger/OpenAPI, Unit & Integration tests.
+**Backend Required Tech**: Spring Boot 3, PostgreSQL, Spring Data JPA, Validation, Spring Security (JWT), Swagger/OpenAPI, Unit & Integration tests.
 
 ## Requirements
 - Java 21 (or 17+)
 - Maven 3.9+
-- PostgreSQL running locally (DB: `schooldb`, user: `postgres`, password: `postgres`)
+- PostgreSQL
 
 > Update `src/main/resources/application.yml` if your DB credentials differ.
 
@@ -49,5 +49,3 @@ Swagger UI: http://localhost:8080/swagger-ui.html
 - Integration test for authentication flow (`AuthControllerIT`), uses H2 profile
 
 ---
-
-**Tip for Interviews**: Explain layers (Controller → Service → Repository), validation, global exception handler, JWT flow (login → token → filter → SecurityContext), and how Swagger helps share/test APIs.
